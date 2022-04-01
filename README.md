@@ -1,0 +1,1 @@
+[![GitHub's Super Linter](https://github.com/KestrelBryce/Assign-02-HTML-Calculations/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/KestrelBryce/Assign-02-HTML-Calculations/actions)
