@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- page title -->
     <title>Assignment 2</title>
   </head>
   <body>
@@ -32,8 +34,7 @@
             </th>
           </tr>
         </table>
-        <!-- Simple Textfield -->
-        
+        <!-- CAD to AUD exchange -->
           <p>Canadian dollars to Australian dollars:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
@@ -42,21 +43,31 @@
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="CAD-to-AUD-here"
             />
-            <label class="mdl-textfield__label" for="CAD-to-AUD-here">Numbers go here... </label>
+            <label class="mdl-textfield__label" for="lbl-CAD-to-AUD">Numbers go here... </label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
+        <!-- CAD to GBP exchange -->
+        <!--
+        <p>Canadian dollars to British pounds:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="CAD-to-GBP-here"
+            />
+            <label class="mdl-textfield__label" for="CAD-to-GBP-here">Numbers go here... </label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        -->
         <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="javascript:calculate()"
-        >
-          Calculate
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:calculate()">
+          <p>Calculate</p>
         </button>
         <br />
         <p>
-          <div id="answers">
-            <div id="area"></div>
-            <div id="perimeter"></div>
+          <div id="AUDResults">
+      
           </div>
         </p>
       </main>
