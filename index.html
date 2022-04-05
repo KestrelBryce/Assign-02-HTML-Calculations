@@ -6,6 +6,7 @@
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="KestrelBryce" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- favicon -->
     <link rel="dollar_favicon" sizes="180x180" href="./fav_index/dollar_favicon.jpg" />
     <link rel="icon" type="image/jpg" sizes="32x32" href="./fav_index/dollar_favicon.jpg" />
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    
     <!-- page title -->
     <title>Assignment 2</title>
   </head>
@@ -25,6 +27,8 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Canadian money exchange calculator</span>
         </div>
+
+      <!-- page header -->
       </header>
       <main class="mdl-layout__content">
         <table>
@@ -34,6 +38,9 @@
             </th>
           </tr>
         </table>
+
+       <p>Refresh page to do another calculation :)</p>
+        
         <!-- CAD to AUD exchange -->
           <p>Canadian dollars to Australian dollars:</p>
           <div class="mdl-textfield mdl-js-textfield">
@@ -46,8 +53,19 @@
             <label class="mdl-textfield__label" for="lbl-CAD-to-AUD">Numbers go here... </label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
+
+        <!-- Cad to AUD button -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:calculateAUD()">
+          <p>Calculate</p>
+        </button>
+        <br />
+        <p>
+          <div id="AUDResults">
+
+          </div>
+        </p>
+        
         <!-- CAD to GBP exchange -->
-        <!--
         <p>Canadian dollars to British pounds:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
@@ -59,14 +77,14 @@
             <label class="mdl-textfield__label" for="CAD-to-GBP-here">Numbers go here... </label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-        -->
-        <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:calculate()">
+        
+        <!-- Cad to GBP button -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:calculateGBP()">
           <p>Calculate</p>
         </button>
         <br />
         <p>
-          <div id="AUDResults">
+          <div id="GBPResults">
       
           </div>
         </p>
